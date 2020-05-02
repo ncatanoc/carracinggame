@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1588276688397" org.eventb.texttools.text_representation="machine RoadFighter sees ctx_0&#10;&#10;variables cars posX posY vel collision&#10;&#10;invariants&#10;  @inv_1 cars ⊆ OBJECTS&#10;  @inv_2 posX ∈ cars → ℕ // x-position of an car&#10;  @inv_3 posY ∈ cars → ℕ // y-position of an car&#10;  @inv_4 vel ∈ cars → ℕ&#10;  @inv_5 collision ∈ cars → BOOL&#10;  @invSafety TRUE ∉ collision[dom(vel▷{0})]&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @init1 cars ≔ ∅&#10;      @init2 posX ≔ ∅&#10;      @init3 posY ≔ ∅&#10;      @init4 vel ≔ ∅&#10;      @init5 collision ≔ ∅&#10;  end&#10;&#10;  event ADD_CAR&#10;    any Car&#10;    where&#10;      @guard1 Car ∈ OBJECTS∖cars&#10;    then&#10;      @act1 cars ≔ cars ∪ {Car}&#10;      @act2 posX ≔ posX ∪ {Car ↦ 0}&#10;      @act3 posY ≔ posY ∪ {Car ↦ 0}&#10;      @act4 vel(Car) ≔ 0&#10;      @act5 collision(Car) ≔ FALSE&#10;  end&#10;&#10;  event DELETE_CAR&#10;    any Car&#10;    where&#10;      @guard1 Car ∈ cars&#10;    then&#10;      @act1 cars ≔ cars ∖ {Car}&#10;      @act2 posX ≔ {Car} ⩤ posX&#10;      @act3 posY ≔ {Car} ⩤ posY&#10;      @act4 vel ≔  {Car} ⩤ vel&#10;      @act5 collision ≔  {Car} ⩤ collision&#10;  end&#10;&#10;  event UPDATE_POS_X&#10;    any Car newX&#10;    where&#10;      @guard1 Car ∈ cars&#10;      @guard2 newX ∈ ℕ&#10;    then&#10;      @act1 posX(Car) ≔ newX&#10;  end&#10;&#10;  event  _Y&#10;    any Car newY&#10;    where&#10;      @guard1 Car ∈ cars&#10;      @guard2 newY ∈ ℕ&#10;    then&#10;      @act1 posY(Car) ≔ newY&#10;  end&#10;&#10;  event SET_VEL&#10;    any Car V&#10;    where&#10;      @guard1 Car ∈ cars&#10;      @guard2 V &gt; 0&#10;    then&#10;      @act1 vel(Car) ≔ V&#10;  end&#10;&#10;  event SET_VEL_0&#10;    any Car&#10;    where&#10;      @guard1 Car ∈ cars&#10;    then&#10;      @act1 vel(Car) ≔ 0&#10;      @act2 collision(Car) ≔ FALSE&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_zR_qkIljEeq4Z4vrIGPFvQ" org.eventb.core.target="ctx_0"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_182WQYi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="cars ≔ ∅" org.eventb.core.label="init1"/>
+<org.eventb.core.action name="_182WQoi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posX ≔ ∅" org.eventb.core.label="init2"/>
+<org.eventb.core.action name="_182WQ4i-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posY ≔ ∅" org.eventb.core.label="init3"/>
+<org.eventb.core.action name="_1829UIi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="vel ≔ ∅" org.eventb.core.label="init4"/>
+<org.eventb.core.action name="_1829UYi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="collision ≔ ∅" org.eventb.core.label="init5"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_1829Uoi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="cars"/>
+<org.eventb.core.variable name="_1829U4i-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="posX"/>
+<org.eventb.core.variable name="_1829VIi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="posY"/>
+<org.eventb.core.variable name="_1829VYi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="vel"/>
+<org.eventb.core.variable name="_1829Voi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="collision"/>
+<org.eventb.core.invariant name="_1829V4i-Eeq4Z4vrIGPFvQ" org.eventb.core.label="inv_1" org.eventb.core.predicate="cars ⊆ OBJECTS"/>
+<org.eventb.core.invariant name="_1829WIi-Eeq4Z4vrIGPFvQ" org.eventb.core.comment="x-position of an car" org.eventb.core.label="inv_2" org.eventb.core.predicate="posX ∈ cars → ℕ"/>
+<org.eventb.core.invariant name="_183kYIi-Eeq4Z4vrIGPFvQ" org.eventb.core.comment="y-position of an car" org.eventb.core.label="inv_3" org.eventb.core.predicate="posY ∈ cars → ℕ"/>
+<org.eventb.core.invariant name="_183kYYi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="inv_4" org.eventb.core.predicate="vel ∈ cars → ℕ"/>
+<org.eventb.core.invariant name="_183kYoi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="inv_5" org.eventb.core.predicate="collision ∈ cars → BOOL"/>
+<org.eventb.core.invariant name="_183kY4i-Eeq4Z4vrIGPFvQ" org.eventb.core.label="invSafety" org.eventb.core.predicate="TRUE ∉ collision[dom(vel▷{0})]"/>
+<org.eventb.core.event name="_183kZIi-Eeq4Z4vrIGPFvQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_CAR">
+<org.eventb.core.parameter name="_183kZYi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="Car"/>
+<org.eventb.core.guard name="_183kZoi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard1" org.eventb.core.predicate="Car ∈ OBJECTS∖cars"/>
+<org.eventb.core.action name="_184LcIi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="cars ≔ cars ∪ {Car}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_184LcYi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posX ≔ posX ∪ {Car ↦ 0}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_184Lcoi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posY ≔ posY ∪ {Car ↦ 0}" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_184Lc4i-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="vel(Car) ≔ 0" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="_184LdIi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="collision(Car) ≔ FALSE" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_184LdYi-Eeq4Z4vrIGPFvQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DELETE_CAR">
+<org.eventb.core.parameter name="_184Ldoi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="Car"/>
+<org.eventb.core.guard name="_184Ld4i-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard1" org.eventb.core.predicate="Car ∈ cars"/>
+<org.eventb.core.action name="_184LeIi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="cars ≔ cars ∖ {Car}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_184LeYi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posX ≔ {Car} ⩤ posX" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_184ygIi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posY ≔ {Car} ⩤ posY" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_184ygYi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="vel ≔  {Car} ⩤ vel" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="_184ygoi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="collision ≔  {Car} ⩤ collision" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_184yg4i-Eeq4Z4vrIGPFvQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UPDATE_POS_X">
+<org.eventb.core.parameter name="_184yhIi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="Car"/>
+<org.eventb.core.parameter name="_184yhYi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="newX"/>
+<org.eventb.core.guard name="_184yhoi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard1" org.eventb.core.predicate="Car ∈ cars"/>
+<org.eventb.core.guard name="_184yh4i-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard2" org.eventb.core.predicate="newX ∈ ℕ"/>
+<org.eventb.core.action name="_184yiIi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posX(Car) ≔ newX" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_184yiYi-Eeq4Z4vrIGPFvQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="_Y">
+<org.eventb.core.parameter name="_185ZkIi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="Car"/>
+<org.eventb.core.parameter name="_185ZkYi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="newY"/>
+<org.eventb.core.guard name="_185Zkoi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard1" org.eventb.core.predicate="Car ∈ cars"/>
+<org.eventb.core.guard name="_185Zk4i-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard2" org.eventb.core.predicate="newY ∈ ℕ"/>
+<org.eventb.core.action name="_185ZlIi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="posY(Car) ≔ newY" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_185ZlYi-Eeq4Z4vrIGPFvQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SET_VEL">
+<org.eventb.core.parameter name="_185Zloi-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="Car"/>
+<org.eventb.core.parameter name="_185Zl4i-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="V"/>
+<org.eventb.core.guard name="_185ZmIi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard1" org.eventb.core.predicate="Car ∈ cars"/>
+<org.eventb.core.guard name="_186AoIi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard2" org.eventb.core.predicate="V &gt; 0"/>
+<org.eventb.core.action name="_186AoYi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="vel(Car) ≔ V" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_186Aooi-Eeq4Z4vrIGPFvQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SET_VEL_0">
+<org.eventb.core.parameter name="_186Ao4i-Eeq4Z4vrIGPFvQ" org.eventb.core.identifier="Car"/>
+<org.eventb.core.guard name="_186ApIi-Eeq4Z4vrIGPFvQ" org.eventb.core.label="guard1" org.eventb.core.predicate="Car ∈ cars"/>
+<org.eventb.core.action name="_186ApYi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="vel(Car) ≔ 0" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_186Apoi-Eeq4Z4vrIGPFvQ" org.eventb.core.assignment="collision(Car) ≔ FALSE" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
