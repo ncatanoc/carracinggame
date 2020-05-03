@@ -1,0 +1,93 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "4,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,464",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "459,619"
+                    }
+                },
+                {
+                    "source": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "124,56",
+                        "endColumns": "49,67",
+                        "endOffsets": "169,119"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,105",
+                        "endColumns": "49,67",
+                        "endOffsets": "100,168"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/src/main/res/values-v14/styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "220",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "366"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/src/main/res/values-v11/styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "177",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "309"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        }
+    ]
+}

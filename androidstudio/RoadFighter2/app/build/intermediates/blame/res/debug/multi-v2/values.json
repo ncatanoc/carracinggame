@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "4,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,464",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "459,619"
+                    }
+                },
+                {
+                    "source": "/Users/nestorcatano/work/research/codeGen/github/carracinggame/androidstudio/RoadFighter2/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "124,56",
+                        "endColumns": "49,67",
+                        "endOffsets": "169,119"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,105",
+                        "endColumns": "49,67",
+                        "endOffsets": "100,168"
+                    }
+                }
+            ]
+        }
+    ]
+}
