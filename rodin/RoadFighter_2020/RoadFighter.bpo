@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="LANES" org.eventb.core.type="ℙ(LANES)"/>
+<org.eventb.core.poIdentifier name="OBJECTS" org.eventb.core.type="ℙ(OBJECTS)"/>
+<org.eventb.core.poIdentifier name="USER_CAR" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="USER_LANE" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="USER_LANF" org.eventb.core.predicate="USER_LANE∈ℤ" org.eventb.core.source="/RoadFighter_2020/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_Gzg78UlIEeO2IOyripq7pQ"/>
+<org.eventb.core.poPredicate name="USER_LANG" org.eventb.core.predicate="USER_CAR∈ℤ" org.eventb.core.source="/RoadFighter_2020/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_tSLusUpjEeO2IOyripq7pQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="cars" org.eventb.core.type="ℙ(OBJECTS)"/>
+<org.eventb.core.poIdentifier name="collision" org.eventb.core.type="ℙ(OBJECTS×BOOL)"/>
+<org.eventb.core.poIdentifier name="posX" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="posY" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="vel" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(OBJECTS×ℤ))∈(∅ ⦂ ℙ(OBJECTS)) → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#INITIALISATION\/inv_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(OBJECTS×ℤ))∈(∅ ⦂ ℙ(OBJECTS)) → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#INITIALISATION\/inv_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(OBJECTS×ℤ))∈(∅ ⦂ ℙ(OBJECTS)) → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#INITIALISATION\/inv_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv_5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(OBJECTS×BOOL))∈(∅ ⦂ ℙ(OBJECTS)) → BOOL" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#INITIALISATION\/inv_5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/invSafety/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE∉(∅ ⦂ ℙ(OBJECTS×BOOL))[dom((∅ ⦂ ℙ(OBJECTS×ℤ)) ▷ {0})]" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#INITIALISATION\/invSafety\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcollisioo" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="cars'" org.eventb.core.type="ℙ(OBJECTS)"/>
+<org.eventb.core.poIdentifier name="posX'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="vel'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="posY'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="collision'" org.eventb.core.type="ℙ(OBJECTS×BOOL)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcollisioo" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTIDENTcollisioo" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="ADD_CAR/inv_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiop"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="posX∪{Car ↦ 0}∈cars∪{Car} → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_183kZIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#ADD_CAR\/inv_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="ADD_CAR/inv_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiop"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="posY∪{Car ↦ 0}∈cars∪{Car} → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_183kZIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#ADD_CAR\/inv_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="ADD_CAR/inv_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiop"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="vel{Car ↦ 0}∈cars∪{Car} → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_183kZIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#ADD_CAR\/inv_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="ADD_CAR/inv_5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiop"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="collision{Car ↦ FALSE}∈cars∪{Car} → BOOL" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_183kZIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#ADD_CAR\/inv_5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="ADD_CAR/invSafety/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiop"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE∉(collision{Car ↦ FALSE})[dom((vel{Car ↦ 0}) ▷ {0})]" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_183kZIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#ADD_CAR\/invSafety\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcollisiop" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="cars'" org.eventb.core.type="ℙ(OBJECTS)"/>
+<org.eventb.core.poIdentifier name="posX'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="vel'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="Car" org.eventb.core.type="OBJECTS"/>
+<org.eventb.core.poIdentifier name="posY'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="collision'" org.eventb.core.type="ℙ(OBJECTS×BOOL)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcollisiop" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTIDENTcollisiop" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Car∈OBJECTS ∖ cars" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_183kZIi-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_183kZoi-Eeq4Z4vrIGPFvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="DELETE_CAR/inv_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{Car} ⩤ posX∈cars ∖ {Car} → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184LdYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#DELETE_CAR\/inv_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DELETE_CAR/inv_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{Car} ⩤ posY∈cars ∖ {Car} → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184LdYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#DELETE_CAR\/inv_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DELETE_CAR/inv_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{Car} ⩤ vel∈cars ∖ {Car} → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184LdYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#DELETE_CAR\/inv_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DELETE_CAR/inv_5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{Car} ⩤ collision∈cars ∖ {Car} → BOOL" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184LdYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#DELETE_CAR\/inv_5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DELETE_CAR/invSafety/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisioq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE∉({Car} ⩤ collision)[dom({Car} ⩤ vel ▷ {0})]" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184LdYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#DELETE_CAR\/invSafety\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcollisioq" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="cars'" org.eventb.core.type="ℙ(OBJECTS)"/>
+<org.eventb.core.poIdentifier name="posX'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="vel'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="Car" org.eventb.core.type="OBJECTS"/>
+<org.eventb.core.poIdentifier name="posY'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="collision'" org.eventb.core.type="ℙ(OBJECTS×BOOL)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcollisioq" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTIDENTcollisioq" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Car∈cars" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184LdYi-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_184Ld4i-Eeq4Z4vrIGPFvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="UPDATE_POS_X/inv_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisior"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="posX{Car ↦ newX}∈cars → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184yg4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#UPDATE_POS_X\/inv_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcollisior" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="posX'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="newX" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Car" org.eventb.core.type="OBJECTS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcollisior" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTIDENTcollisior" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Car∈cars" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184yg4i-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_184yhoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="newX∈ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184yg4i-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_184yh4i-Eeq4Z4vrIGPFvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="_Y/inv_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisios"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="posY{Car ↦ newY}∈cars → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184yiYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#_Y\/inv_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcollisios" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Car" org.eventb.core.type="OBJECTS"/>
+<org.eventb.core.poIdentifier name="newY" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="posY'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcollisios" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTIDENTcollisios" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Car∈cars" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184yiYi-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_185Zkoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="newY∈ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_184yiYi-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_185Zk4i-Eeq4Z4vrIGPFvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="SET_VEL/inv_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiot"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="vel{Car ↦ V}∈cars → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_185ZlYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#SET_VEL\/inv_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SET_VEL/invSafety/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiot"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE∉collision[dom((vel{Car ↦ V}) ▷ {0})]" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_185ZlYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#SET_VEL\/invSafety\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcollisiot" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="vel'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="Car" org.eventb.core.type="OBJECTS"/>
+<org.eventb.core.poIdentifier name="V" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcollisiot" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTIDENTcollisiot" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Car∈cars" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_185ZlYi-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_185ZmIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="V&gt;0" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_185ZlYi-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_186AoIi-Eeq4Z4vrIGPFvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="SET_VEL_0/inv_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="vel{Car ↦ 0}∈cars → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_186Aooi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#SET_VEL_0\/inv_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SET_VEL_0/inv_5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="collision{Car ↦ FALSE}∈cars → BOOL" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_186Aooi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#SET_VEL_0\/inv_5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SET_VEL_0/invSafety/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTALLHYPcollisiou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE∉(collision{Car ↦ FALSE})[dom((vel{Car ↦ 0}) ▷ {0})]" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_186Aooi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poSequent#SET_VEL_0\/invSafety\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcollisiou" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="vel'" org.eventb.core.type="ℙ(OBJECTS×ℤ)"/>
+<org.eventb.core.poIdentifier name="Car" org.eventb.core.type="OBJECTS"/>
+<org.eventb.core.poIdentifier name="collision'" org.eventb.core.type="ℙ(OBJECTS×BOOL)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcollisiou" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#EVTIDENTcollisiou" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Car∈cars" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.event#_186Aooi-Eeq4Z4vrIGPFvQ|org.eventb.core.guard#_186ApIi-Eeq4Z4vrIGPFvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RoadFighter_2020/RoadFighter.bpo|org.eventb.core.poFile#RoadFighter|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="cars⊆OBJECTS" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829V4i-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="posX∈cars → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_1829WIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="posY∈cars → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYIi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="vel∈cars → ℕ" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYYi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="collision∈cars → BOOL" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kYoi-Eeq4Z4vrIGPFvQ"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="TRUE∉collision[dom(vel ▷ {0})]" org.eventb.core.source="/RoadFighter_2020/RoadFighter.bum|org.eventb.core.machineFile#RoadFighter|org.eventb.core.invariant#_183kY4i-Eeq4Z4vrIGPFvQ"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
